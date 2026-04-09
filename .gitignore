@@ -1,0 +1,4 @@
+# Local secrets — copy config.example.php to config.php and fill in values
+config/config.php
+
+storage/sms_once.lock

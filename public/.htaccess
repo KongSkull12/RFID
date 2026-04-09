@@ -1,0 +1,15 @@
+# XAMPP / Apache — allow overrides for this folder
+<IfModule mod_authz_core.c>
+    Require all granted
+</IfModule>
+
+Options -Indexes
+
+# Land guests on login; logged-in users are sent to the dashboard by public/login.php
+DirectoryIndex login.php index.php
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    # If links break, set RewriteBase to match BASE_URL in config/config.php (path after host, including /public)
+    # RewriteBase /RFID-attendance/public/
+</IfModule>
